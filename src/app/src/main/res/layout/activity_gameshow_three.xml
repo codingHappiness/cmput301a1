@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.masonstrong.mstrong_reflex.GameshowThree">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/player1"
+                android:id="@+id/g3p1"
+                android:onClick="p1hit3"
+                android:layout_weight="1"
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/player2"
+                android:id="@+id/g3p2"
+                android:onClick="p2hit3"
+                android:layout_weight="1"
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/player3"
+                android:id="@+id/g3p3"
+                android:onClick="p3hit3"
+                android:layout_weight="1"
+                android:layout_column="0" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
